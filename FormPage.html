@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Meta data -->
+        <meta charset="UTF-8">
+		<meta name="description" content="Basic Python Introduction">
+		<meta name="keywords" content="Python, Tutorial, Introduction, W3Schools, Intro, Basics, Beginner">
+		<meta name="author" content="Joshua Comstock">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load external JavaScript -->
+        <script src="JavaPage.js"></script>
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="StylePage.css">
+        <!-- Fav Icon -->
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <!-- Page title --> 
+        <title> Form </title>
+    </head>
+
+    <body>
+        <!-- Header intro -->
+        <div class="header">
+            <h1> Python Introduction: Form </h1>
+        </div>  
+        <!-- Nav bar -->
+        <div class="navbar">
+            <a href="HomePage.html"> Home </a>
+            <a href="TablePage.html"> Table </a>
+            <a class="active" href="FormPage.html"> Form </a>
+            <a href="AboutPage.html"> About </a>
+        </div>
+        <!-- form -->
+        <div class="container">
+            <h3 class="center"> Survey </h3>
+            <form action="#actionpage" method="post" onsubmit="target_popup(this)">
+                <!-- first name -->
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="fname" placeholder="Your name..">
+                </div>
+              </div>
+              <!-- last name -->
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                </div>
+              </div>
+              <!-- radio satisfied question -->
+              <div class="row">
+                <div class="col-25">
+                  <label> Overall, how satisfied are you with the contents of this website </label>
+                </div>
+                <div class="col-75">
+                  <input type="radio" name="Satisfied" value="Very Satisfied">
+                  <label for="very_sat">Very satisfied</label><br>
+                  <input type="radio" id="most_sat" name="Satisfied" value="Mostly Satisfied">
+                  <label for="most_sat">Mostly satisfied</label><br>
+                  <input type="radio" id="sat" name="Satisfied" value="Satisfied">
+                  <label for="sat">Satisfied</label><br>
+                  <input type="radio" id="some_sat" name="Satisfied" value="Somewhat Satisfied">
+                  <label for="some_sat">Somewhat satisfied</label><br>
+                  <input type="radio" id="not_sat" name="Satisfied" value="Not Satisfied">
+                  <label for="not_sat">Not satisfied</label><br>
+                  </select>
+                </div>
+                <!-- checkbox questions -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="opt1"> What would you like to see updated from the list below? </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="checkbox" id="opt1" name="opt1" value=" Web Style">
+                        <label for="opt1"> Style or color of webpage</label><br>
+                        <input type="checkbox" id="opt2" name="opt2" value="Cheat Sheet">
+                        <label for="opt2"> Add a cheat sheet</label><br>
+                        <input type="checkbox" id="opt3" name="opt3" value="More Content">
+                        <label for="opt3"> Add more content </label>
+                    </div>
+              </div>
+              <!-- select dropdown multiple  -->
+              <div class="row">
+                <div class="col-25">
+                    <label for="helpful">Which features below did you find most helpful?<br>Select as many as you would like, hold ctrl key while selecting</label>
+                </div>
+                <div class="col-75">
+                    <select id="helpful" name="helpful" multiple>
+                        <option value="table">Table tab</option>
+                        <option value="syntax">Syntax explanation</option>
+                        <option value="website links">Website links provided</option>
+                        <option value="code">Example code</option>
+                    </select>
+                </div>
+              </div>
+              <!-- message text area -->
+              <div class="row">
+                <div class="col-25">
+                    <label for="message"> Comments: </label>
+                </div>
+                <div class="col-75">
+                  <textarea id="message" name="message" placeholder="Comments..." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </div>
+            </form>
+          </div>
+        </div>
+    <!-- Footer info area -->
+    <div class="footer">
+
+        <h3 class="center"> Good luck and happy coding! </h3>
+        <p> Links and information! </p>
+        <ul class="b">
+            <li> <a href="https://www.w3schools.com/"> W3Schools </a> </li>
+            <li> <a href="https://github.com/"> GitHub </a> </li>
+        </ul>
+    </div>
+
+</body>
+</html>

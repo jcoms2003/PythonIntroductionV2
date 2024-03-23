@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Meta data -->
+        <meta charset="UTF-8">
+		<meta name="description" content="Basic Python Introduction">
+		<meta name="keywords" content="Python, Tutorial, Introduction, W3Schools, Intro, Basics, Beginner">
+		<meta name="author" content="Joshua Comstock">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load external JavaScript -->
+        <script src="JavaPage.js"></script>
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="StylePage.css">
+        <!-- Fav Icon -->
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <!-- Page title --> 
+        <title> Home </title>
+    </head>
+
+    <body>
+        <!-- Header intro -->
+        <div class="header">
+            <h1 > Python Introduction: Home Page </h1>
+        </div>  
+        <!-- Nav bar -->
+        <div class="navbar">
+            <a class="active" href="HomePage.html"> Home </a>
+            <a href="TablePage.html"> Table </a>
+            <a href="FormPage.html"> Form </a>
+            <a href="AboutPage.html"> About </a>
+        </div>
+        <!-- Main content -->
+        <div class="row">
+            <!-- First left column info area -->
+            <div class="leftCol">
+                <div class="card">
+                    <h2 class="center"> Welcome! </h2>
+                    <!-- javascript functions over first paragraph -->
+                    <p onmouseover="style.color='red'" onmouseout="style.color='black'">
+                         This website is for anyone who needs a little more help with any python 
+                         fundamentals. This website will also teach you how to get started with various websites and resources! 
+                    </p>
+                    <img id="img1" src="PythonLogo.jpg" alt="Python logo">
+                    <p>
+                        Now lets get started...<br> The first step in coding in python is understanding that it’s just 
+                        like any other language you would learn, like Spanish or German for example. That being said, take the same 
+                        approach. You need to start by learning the syntax, or in other words the format/guidelines of the language. 
+                        The syntax for python is simple and has a resemblance to English. Once you are able to understand the syntax, 
+                        you are able to start coding!
+                    </p>
+                    <!-- day and time button -->
+                    <p id="daytime"> Click button below to see current day and time here! <p>
+                    <!-- daytime button -->
+                    
+                    <button class="timebutton" type="button" onclick="document.getElementById('daytime').innerHTML = Date()"> Click for day/time </button>
+                    <button class="timebutton" type="button" onclick="document.getElementById('daytime').innerHTML = 'Click button below to see current day and time here!'"> Reset </button>
+                    
+                    <!-- paragraph with more info -->
+                    <p> 
+                        To start coding you need to understand variables and data types. See <a href="https://www.w3schools.com/python/python_variables.asp">Data Types and Variables</a> 
+                        for more information. Variables are values that have different types, for example a whole number is an integer or int and decimals are float. 
+                        The program will automatically assign the type based on the initial value, however, you have the option to assign it yourself depending on the situation. 
+                        Variables can also be words; these are called strings. They can also be stored in a variable as a str (). Next you have Booleans, which are basically true or false (1/0). 
+                        Finally, with variables you have the ability to use operators, or in other words basic arithmetic (* / + / -).<br>See <a href="https://www.w3schools.com/python/default.asp">w3schools</a> for more information. 
+                    </p>
+                    <p>
+                        Now, getting into the core of python we'll talk about <span class="boldtext"> lists</span>, <span class="boldtext">tuples</span>, 
+                        <span class="boldtext">sets</span>, <span class="boldtext">dictionaries</span>, and <span class="boldtext">conditionals</span>.
+                    </p>
+                    <ul class="a">
+                        <li> Lists are multiple items stored into a single variable. They are changeable, ordered, and allow duplicates. </li>
+                        <li> Tuples are the same as lists except they are unchangeable. </li>
+                        <li> Sets are also the same as lists except they are unordered, unchangeable and unindexed. </li>
+                        <li> Dictionaries are used to store data in key:value pairs </li>
+                    </ul> 
+                </div>
+                <div class="card">
+                    <h3 class="center"> Finally... </h3>
+                    <p>
+                        Moving on, we have conditionals. Conditionals are exactly as they sound. They are <span class="italictext">parameters that must be met</span> 
+                        in order to complete an action. To see the syntax and understand conditionals more visit <a href="https://www.w3schools.com/python/python_variables.asp">Learning Conditionals with Python</a>.
+                    </p>
+                    <p>
+                        Finally, I hope this has helped you get a decent understanding of the basics of python. There are so many more tools available and many more additions you can make to have complex and concise code. 
+                        <br> Clicking the image below will take you to the main page of W3schools, the page that I have used for learing code and referenced throughout this website.
+                    </p>
+                     <!-- clickable image with hyperlink -->
+                    <a href="https://www.w3schools.com/">
+                        <img id=img3 src="W3Schools_logo.png" alt="W3Schools logo">
+                    </a>
+                </div>
+            </div>
+            <!-- right column info area -->
+            <div class="rightCol">
+                <div class="card">
+                    <h4 class="center"> Secret Messege Below! </h4>
+                    <!-- secret message -->
+                    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: #3cc47c; color:black; width: 75%; height: 100px; border: 2px solid #1e392a; border-radius: 10px; overflow: auto; margin: auto; text-align: center; padding-top: 15px;" > Hover over me </div>
+                </div>
+                <!-- image fits whole section -->
+                <img id="img2" src="Python_image.jpg" alt="Python image">
+                
+                <!-- video messege -->
+                <div class="card" >
+                    <h4 class="center"> Welcome Video </h4>
+                    <video class="center" id="movie" width="200"  controls>
+                        <source src="introvid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- audio messege -->
+                <div class="card">
+                    <h4 class="center"> Welcome Audio </h4>
+                    <audio controls>
+                        <source src="introaudio.m4a" type="audio/mpeg" >
+                        Your browser does not support the audio element
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer info area -->
+    <div class="footer">
+
+        <h3 class="center"> Good luck and happy coding! </h3>
+        <p> Links and information! </p>
+        <ul class="b">
+            <li> <a href="https://www.w3schools.com/"> W3Schools </a> </li>
+            <li> <a href="https://github.com/"> GitHub </a> </li>
+        </ul>
+    </div>
+    </body>
+
+</html>

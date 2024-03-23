@@ -1,0 +1,290 @@
+/* Style for Python Intro Website */
+/* Joshua Comstock - WEBD 121 */
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+/* body style */
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: #a5a5af;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header style */
+.header {
+    background-color: #3cc47c;
+    padding: 20px;
+    text-align: center;
+}
+/* Nav bar style */
+.navbar {
+    background-color: #1e392a;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #e9c893;
+    position: sticky;
+}
+.active {
+    background-color: #130e0e;
+}
+.navbar a:hover:not(.active) {
+    background-color: #130e0e;
+}
+/* paragraph links style */
+p a {
+    color:#3cc47c;
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+    font-size: 1.01em;
+    color: #130e0e;
+}
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* left column style */
+.leftCol {
+    float: left;
+    width: 75%;
+}
+/* right column */
+.rightCol {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+/* for card effect */
+.card {
+  background-color: #e3dcd2;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #1e392a;
+  border-radius: 10px;
+}
+/* footer sytle */
+.footer {
+  padding: 15px;
+  background: #3cc47c;
+  margin-top: 20px;
+  border: 2px solid #1e392a;
+}
+/* Image styles */
+#img1 {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    float: left;
+    padding: 5px;
+    z-index: 1;
+	animation-name: animateBox;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	position: relative;
+    border-radius: 15px;
+}
+#img2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border: 2px solid #1e392a;
+    border-radius: 10px;
+}
+#img3 {
+	float:none;
+	width:50px;
+	height:50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	
+}
+#img3:hover {
+  box-shadow: 0 0 2px 1px blue;
+  opacity: 0.5;
+  width: 55px;
+  height: 55px;
+  transition: width 1s, height 1s;
+  transition-timing-function: ease-in-out;
+}
+/* style for list in home page and about page */
+ul.a {
+    list-style-type: disc;
+}
+ul.b {
+    list-style-type: square;
+}
+ul.b li a {
+    text-decoration: underline;
+    color: green;
+}
+ul.b li a:hover {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+/* daytime button style */
+.timebutton {
+	margin-top: 5px;
+    margin-bottom: 5px;
+	border: 2px solid #1e392a;
+	background-color: #3cc47c;
+}
+#timebutton:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* video and audio style */
+video {
+    max-height: 150px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+audio { 
+    max-height: 35px;
+    max-width: 100%;
+    border: 2px solid #1e392a;
+    border-radius: 15px;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+}
+/* table styles */
+table {
+    display: block;
+    border-collapse: collapse;
+    width: 90%;
+    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b8a994;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+th {
+    border: 1px solid #1e392a;
+    text-align: center;
+    padding: 10px;
+}
+td {
+    border: 1px solid #1e392a;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #e3dcd2;
+}
+/* animations */
+@keyframes animateBox {
+	0% {background-color: green; left: 0; top: 0px; }
+	25% {background-color: yellow; left: 200px; top:0px; }
+	50% {background-color: blue; left: 200px; top: 200px; }
+	75% {background-color: red; left: 0; top: 200px; }
+	100% {background-color: green; left: 0; top: 0px; }
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftCol, .rightCol {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* center bold and italic classes */
+.center {
+    text-align: center;
+}
+.boldtext {
+	font-weight: bold;
+}
+.italictext {
+	font-style: italic;
+}
+.fontstyle {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* SURVEY STYLES */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=text]:focus, textarea:focus {
+	background-color: #bdbdc3;
+}
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #e3dcd2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 5px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 5px;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
