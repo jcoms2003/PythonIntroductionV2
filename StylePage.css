@@ -210,6 +210,9 @@ tr:nth-child(even) {
     width: 100%;
     text-align: center;
   }
+  .navbar {
+    display: block;
+  }
 }
 /* center bold and italic classes */
 .center {
