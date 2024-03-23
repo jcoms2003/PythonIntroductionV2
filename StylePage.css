@@ -211,7 +211,7 @@ tr:nth-child(even) {
     text-align: center;
   }
   .navbar {
-    display: block;
+    position: relative;
   }
 }
 /* center bold and italic classes */
